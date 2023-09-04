@@ -1,0 +1,6 @@
+.idea/*
+php/*
+www/*
+venv/*
+config/__pycache__/*
+.exe
