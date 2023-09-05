@@ -1,4 +1,3 @@
-# The port on which the server will be running
 import random
 
 RANDOM_PORT = True

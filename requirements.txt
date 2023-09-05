@@ -1,2 +1,5 @@
 # Python version 3.9.7
 PyQt6==6.5.2
+requests==2.31.0
+PyMsgBox==1.0.9
+easygui==0.98.3

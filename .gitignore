@@ -2,5 +2,7 @@
 php/*
 www/*
 venv/*
+logs/*.log
 config/__pycache__/*
 .exe
+```
