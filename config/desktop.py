@@ -1,21 +1,21 @@
 """
+DEBUG: Whether the application should be in debug mode or not.
 DESKTOP_APP_NAME: The name of the application.
 ANIMATED: Whether the application should be animated or not.
-DEBUG: Whether the application should be in debug mode or not.
 PHP_BIN_DIRECTORY_NAME: The name of the PHP binary directory.
 PHP_EXECUTABLE_NAME: The name of the PHP executable.
 LARAVEL_PROJECT_DIRECTORY_NAME: The name of the Laravel project directory.
 LARAVEL_PUBLIC_DIRECTORY_NAME: The name of the Laravel public directory.
 FALLBACK_FILE_NAME: The name of the fallback file.
 """
-
+DEBUG = True
 DESKTOP_APP_NAME = "Laravel Desktop"
 ANIMATED = True
-DEBUG = True
 PHP_BIN_DIRECTORY_NAME = "php"
 PHP_EXECUTABLE_NAME = "php.exe"
 LARAVEL_PROJECT_DIRECTORY_NAME = "www"
 LARAVEL_PUBLIC_DIRECTORY_NAME = "public"
+COMPOSER_EXECUTABLE_NAME = "composer.phar"
 FALLBACK_FILE_NAME = "default.php"
 
 """
@@ -49,7 +49,13 @@ LOGS = {
 SPLASH_SCREEN = {
     "folder_name": "assets\\splash",
     "splash_name": "splash.png",
-    'splash_time': 2.5
+    "splash_loader_name": "loader.gif",
+    "splash_time": 2.5
+}
+
+CACERT_PEM = {
+    "folder_name": "assets\\ssl",
+    "cacert_pem_name": "cacert.pem",
 }
 
 # ---------------------------------------------------------------------------
@@ -111,6 +117,9 @@ PHP_DOWNLOAD_URL_32 = {
     "8.2": "https://windows.php.net/downloads/releases/php-8.2.10-nts-Win32-vs16-x86.zip",
 }
 
+COMPOSER_DOWNLOAD_URL = "https://getcomposer.org/installer"
+COMPOSER_SETUP_FILE = "composer-setup.php"
+
 PHP_INI_STUB = {
     "folder_name": "assets\\stubs",
     "stub_name": "php.ini.stub",
@@ -122,3 +131,4 @@ PHP_INI_FILENAME_FRESH_INSTALL = "php.ini-development"
 TEMP = {
     "folder_name": "assets\\temp",
 }
+

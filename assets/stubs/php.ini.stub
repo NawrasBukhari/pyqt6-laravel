@@ -8,15 +8,15 @@ zlib.output_compression = Off
 implicit_flush = Off
 unserialize_callback_func =
 serialize_precision = -1
-disable_functions =
+disable_functions = exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source
 disable_classes =
 zend.enable_gc = On
 zend.exception_ignore_args = Off
 expose_php = On
 max_execution_time = 120
 max_input_time = 60
-max_input_vars = 2500
-memory_limit = 128M
+max_input_vars = 5000
+memory_limit = 1024M
 error_reporting = E_ALL
 display_errors = On
 display_startup_errors = On
@@ -25,12 +25,12 @@ log_errors_max_len = 1024
 ignore_repeated_errors = Off
 ignore_repeated_source = Off
 report_memleaks = On
-error_log ="%pyqt6_laravel_error_log%/php_error.log"
+error_log ="%pyqt6_laravel_error_log%\php_error.log"
 variables_order = "GPCS"
 request_order = "GP"
 register_argc_argv = Off
 auto_globals_jit = On
-post_max_size = 8M
+post_max_size = 512M
 auto_prepend_file =
 auto_append_file =
 default_mimetype = "text/html"
@@ -41,7 +41,7 @@ extension_dir ="%pyqt6_laravel_extension_dir%"
 enable_dl = Off
 file_uploads = On
 upload_tmp_dir ="%pyqt6_laravel_upload_tmp_dir%"
-upload_max_filesize = 2M
+upload_max_filesize = 512M
 max_file_uploads = 20
 allow_url_fopen = On
 allow_url_include = Off
@@ -165,7 +165,7 @@ tidy.clean_output = Off
 
 [soap]
 soap.wsdl_cache_enabled=1
-soap.wsdl_cache_dir="%pyqt6_laravel_soap_wsdl_cache_dir%
+soap.wsdl_cache_dir="%pyqt6_laravel_soap_wsdl_cache_dir%"
 soap.wsdl_cache_ttl=86400
 soap.wsdl_cache_limit = 5
 
@@ -178,8 +178,8 @@ zend_extension="%pyqt6_laravel_php_opcache_dll%"
 
 
 [curl]
-;curl.cainfo =
+curl.cainfo="%pyqt6_laravel_cainfo%"
 
 [openssl]
-;openssl.cafile=
+openssl.cafile="%pyqt6_laravel_openssl_cainfo%"
 ;openssl.capath=
