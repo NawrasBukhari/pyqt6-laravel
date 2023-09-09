@@ -6,7 +6,7 @@ python and uses PyQt6 for the GUI.
 ## Installation
 
 You can install PyQt6-Laravel latest release
-from [here](https://github.com/NawrasBukhari/pyqt6-laravel/releases/download/v0.2/pyqt6-laravel.rar).
+from [here](https://github.com/NawrasBukhari/pyqt6-laravel/releases/download/v0.3/Laravel.Desktop.exe).
 you should have the following directory structure:
 
 ```
